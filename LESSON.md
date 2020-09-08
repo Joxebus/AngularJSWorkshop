@@ -30,9 +30,11 @@ Now that is set to false the paragraph will not be shown.
 
 Add a directive `ng-init` to initialize values to be used on the `ng-if`
 
+```html
 <body ng-init="hourOfDay = 14">
     <h1>Hello Angular!</h1>
     <p ng-if="hourOfDay < 12">Good morning</p>
     <p ng-if="hourOfDay > 11 && hourOfDay < 18 ">Good afternoon</p>
     <p ng-if="hourOfDay > 17">Good evening</p>
 </body>
+```
